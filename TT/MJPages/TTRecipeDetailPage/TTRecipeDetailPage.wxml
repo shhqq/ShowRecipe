@@ -1,0 +1,74 @@
+<view id='content'>
+
+  <!-- 交互信息展示  用于展示评论、收藏、点赞 三种交互状态  -->
+  <view id='info-content'>
+
+
+
+
+  </view>
+
+
+
+  <view id='recipe-content'>
+
+    <!-- 头部信息展示 -->
+    <view id='header-content'>
+      <!-- 头部文字信息展示  菜名   价钱 -->
+      <view id='header-content-text'>
+        <text id='header-content-text-name'>麻辣鱼香肉丝</text>
+        <text id='header-content-text-price'>12.5元</text>
+      </view>
+      <view id="header-content-tags">
+        <wux-tag color="green">2019.08.20</wux-tag>
+        <wux-tag color="green">周二</wux-tag>
+        <wux-tag color="green">午餐</wux-tag>
+      </view>
+    </view>
+
+    <!-- 文字描述 -->
+    <scroll-view id='description-content' scroll-y scroll-top="0">
+      <text id='description-content-text'>设计模式（Design Pattern）是一套被反复使用、多数人知晓的、经过分类的、代码设计经验的总结。使用设计模式的目的：为了代码可重用性、让代码更容易被他人理解、保证代码可靠性。 设计模式使代码编写真正工程化；计模式（Design Pattern）是一套被反复使用、多数人知晓的、经过分类的、代码设计经验的总结。使用设计模式的目的：为了代码可重用性、让代码更容易被他人理解、保证代码可靠性。 设计模式使代码编写</text>
+    </scroll-view>
+
+
+    <!-- 图片 -->
+
+    <view id="pictures-content">
+      <block wx:for="{{pictures}}" wx:for-index="index" wx:key="index">
+        <image class='cell-body-picture' src='{{item}}'></image>
+      </block>
+    </view>
+
+
+    <!-- 标签 -->
+    <view id='extension-content'>
+      <view id='extension-content-text'>
+      </view>
+      <view id="extension-content-tags">
+        <wux-tag color="green">第二份半价</wux-tag>
+        <wux-tag color="green">微辣</wux-tag>
+        <wux-tag color="green">午餐</wux-tag>
+        <wux-tag color="green">午餐</wux-tag>
+        <wux-tag color="green">午餐</wux-tag>
+        <wux-tag color="green">第二份半价</wux-tag>
+        <wux-tag color="green">微辣</wux-tag>
+        <wux-tag color="green">午餐</wux-tag>
+      </view>
+      <view id='extension-content-text'>
+      </view>
+    </view>
+  </view>
+
+
+  <!-- 评论区 -->
+  <view id='discuss-content'>
+    <view class='discuss-cell'>
+
+
+
+
+
+    </view>
+  </view>
+</view>
